@@ -1,4 +1,27 @@
-<!doctype html>
+<?php
+/* Smarty version 3.1.34-dev-7, created on 2020-10-21 23:43:11
+  from 'C:\Users\dimar\Documents\GitHub\baraonda\template\main\home.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.34-dev-7',
+  'unifunc' => 'content_5f90ab6f4002c2_62579778',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '98e9ac2c647d6302218c58baf8f1032a26947b49' => 
+    array (
+      0 => 'C:\\Users\\dimar\\Documents\\GitHub\\baraonda\\template\\main\\home.tpl',
+      1 => 1603316589,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5f90ab6f4002c2_62579778 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
 <html lang="en">
 
 <head>
@@ -9,14 +32,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
-    </script>
+    <?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    <?php echo '</script'; ?>
+>
     
     <link rel="stylesheet" href="css/fontaws.css" type="text/css">
     <link rel="stylesheet" href="css/font-locale.css" type="text/css">
-    <title>{$pageTitle}</title>
+    <title><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
+</title>
    
-{literal}
+
 <style>
     body {
         background: url('assets/background.jpg') no-repeat center center fixed;
@@ -51,7 +77,7 @@
     }
 </style>
 
-{/literal}
+
 </head>
 
 <body class="text-white">
@@ -84,8 +110,14 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <?php echo '<script'; ?>
+ src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"><?php echo '</script'; ?>
+>
 </body>
 
 </html>
+<?php }
+}

@@ -1,0 +1,37 @@
+@font-face {
+        font-family: "descrizioni";
+        src: url("../assets/fonts/AmaticSC-Bold.woff") format('woff');
+}
+
+@font-face {
+    font-family: "piatti-prezzi";
+    src: url("../assets/fonts/TrashHand.woff") format('woff');
+}
+
+@font-face {
+    font-family: "descrizione-piatti";
+    src: url("../assets/fonts/Engine-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "headings";
+    src: url("../assets/fonts/NexaRustSlab-BlackShadow01.woff") format('woff');
+}
+
+@font-face {
+    font-family: "nomesottotipo";
+    src: url("../assets/fonts/caflischscriptpro-regular.woff") format('woff');
+}
+
+.descrizioni{ font-family: descrizioni; }
+.piatti-prezzi{ font-family: piatti-prezzi; }
+.descrizione-piatti{ font-family: descrizione-piatti; }
+.headings{ font-family: headings; }
+.nomesottotipo{ font-family: nomesottotipo; }
+
+
+.descrizioni, .descrizione-piatti, .heading, .nomesottotipo, a, a:active, a:focus, a:hover {
+    color: 	#ffd503;
+    text-decoration: none;
+}
+
