@@ -1,0 +1,70 @@
+$field-container-padding: 5px;
+$label-padding: $field-container-padding !default;
+
+
+
+/* Body style is only for code pen viewing, do not copy in actual project*/
+body{
+  font-family:sans-serif;
+  margin:30px;
+}
+
+
+.field-container{
+  position: relative;
+  border:1px solid #bcbaba;
+  height:50px;
+  width:320px;
+  padding-left:12px;
+}
+
+.field-placeholder{
+  position: absolute;
+ 
+  top: 50%;
+  transform: translate(#{$label-padding}, -50%);
+  pointer-events: none;
+  transition: all .14s ease-in-out;
+  font-size:18px;
+  color:#adadad;
+}
+
+input[type="text"].field-input{
+  color: #000;
+ border:none;
+  padding: $label-padding;
+  margin-top:20px;
+  font-size: 16px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  bottom:0px;
+  &:focus {
+    outline: none;
+  }
+  &.c-fix,
+  &:focus,
+  &:not(:placeholder-shown),
+  {
+    border-color: transparent;
+    ~ label {
+     color:#646669;
+      font-size: 11px;
+      //Come up with a calculation for this
+      top: calc(30% - .5rem);
+      transform: translate(#{$label-padding}, 0%);
+    }
+  }
+  
+  &::-webkit-input-placeholder {
+    color: transparent;
+  }
+  &::-moz-placeholder {
+    color: transparent;
+  }
+  &:-ms-input-placeholder {
+    color: transparent;
+  }
+ 
+}
+
